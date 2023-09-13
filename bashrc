@@ -54,19 +54,11 @@ alias ls='ls -G'
 alias c='clear'
 alias rm='rm -i'
 alias rec='ls -rt'
-alias dl='ls -rt ~/Downloads'
-
 
 
 alias tree='tree -C -I venv'
 
 alias subl='open -a "Sublime Text"'
-
-alias gp='cd ~/Programming/Projects'
-alias gw='cd ~/Programming/Work'
-alias gl='cd ~/Programming/Learning'
-alias gd='cd ~/Documents'
-alias gu='cd ~/Documents/UCL'
 
 alias psh='pushd'
 alias pop='popd'
@@ -80,25 +72,15 @@ alias mkvenvssp='python3 -m venv venv --system-site-packages'
 alias mkvenv27='virtualenv --no-site-packages venv'
 alias mkvenv27ssp='virtualenv --system-site-packages venv'
 
-alias virtualenv='virtualenv --no-site-packages'
-alias virtualenv3='virtualenv --no-site-packages --python=python3.6'
 
 alias gitignore='_gitignore'
 
-alias bashrc='vim ~/dotfiles/bashrc'
+alias bashrc='vim ~/.bashrc'
 
 AM_PS1='\[$yellow\]\[$bold\]$(whoami)\[$reset\]@\[$green\]\h\[$reset\]:\[$blue\]\w\[$reset\]\n$(__git_ps1 \(%s\) )\$ '
 alias amps1='PS1=$AM_PS1'
 
-#alias o='open .'
-
-alias cast2gif='docker run --rm -v $PWD:/data asciinema/asciicast2gif'
-
 ### Functions
-
-function cpdl(){
-  cp ~/Downloads/$1 .
-}
 
 function o(){
   shopt -s nocaseglob
